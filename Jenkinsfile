@@ -9,6 +9,7 @@ node('walmart-node')
  stage('build'){
  sh "${mavenhome}/bin/mvn clean package"
  }
+ /*
  stage('Executesonarqubereport'){
  sh "${mavenhome}/bin/mvn clean sonar:sonar" 
  }
@@ -26,4 +27,5 @@ stage('deploytomcatintotomcatapplicationserver')
 regards
 snehaprudhvi''', cc: 'snehaprudhvi12@gmail.com', from: '', replyTo: '', subject: 'build over', to: 'snehaprudhvi12@gmail.com'
   }  
+  */
 }
