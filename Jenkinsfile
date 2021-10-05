@@ -1,4 +1,4 @@
-node 
+node('walmart-node')
 {
  def mavenhome = tool name: "maven3.8.2"
      
