@@ -15,9 +15,10 @@ node{
     stage('Upload Artifact into Nexus Repository'){
         sh "${mavenhome}/bin/mvn clean deploy"
         }
+    /*
     stage("Deploy Application in Tomcat Server"){
         sshagent(['fb8db3f3-71b4-41fd-887e-871d96158a75']) {
         sh "scp -o  StrictHostKeyChecking=no target/maven-web-application.war ec2-user@54.193.242.206:/opt/apache-tomcat-9.0.53/webapps"
         }
         }
-    
+    */
